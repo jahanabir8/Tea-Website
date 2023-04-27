@@ -1,0 +1,634 @@
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+/* for all tea__button start here */
+.tea__button{
+    margin-top: 22px;
+}
+
+.tea__button a {
+    text-decoration: none;
+    color: var(--pTextColor);
+    background-color: var(--pColor);
+    padding: 10px 20px;
+    margin-top: 0px; 
+    position: relative;
+    display: inline-block;
+    z-index: 999;
+} 
+
+.tea__button a::after{
+    background-color: var(--pBGColor);
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.5s;
+}
+
+.tea__button a:hover::after{
+    transform: scaleY(1);
+    transform-origin: left;
+    z-index: -5;
+}
+
+/* for all tea__button end here */
+
+:root {
+    --pColor: #5d9a1d;
+    --pFamily: 'Bitter', serif;
+    --pTextColor: #fff;
+    --pBGColor: green;
+}
+
+p, h1, h2, h3, h4, h5, h6, span , a {
+    font-family: var(--pFamily);
+}
+
+/* header section start here */
+
+.header__section {
+    padding-top: 42px;
+    background-color: #e3e3e3;
+}
+
+    /* header top start here */
+
+i.fa-solid {
+    margin-right: 8px;
+    color: var(--pColor);
+}
+
+span.icon__cart {
+    margin-right: 20px;
+}
+
+.header__top {
+    text-align: end;
+    font-weight: bold;
+}
+
+    /* header top end here */
+/* ---------------------------------------------------------------- */
+    /* header bottom start here */
+
+    .header__bottom .main__menu {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .header__bottom .menu__section ul {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .header__bottom .menu__section ul li {
+        list-style: none;
+        position: relative;
+    }
+
+    .header__bottom .menu__section > ul > li > ul{
+        position: absolute;
+        background: transparent;
+        margin: 0;
+        padding: 10px;
+        top: 40px;
+        opacity: 0;
+        visibility: hidden;
+        -webkit-transition: all 0.7s ;
+        background-color: var(--pTextColor);
+    }
+
+    .header__bottom .menu__section ul li:hover ul{
+        top: 35px;
+        opacity: 1;
+        visibility: visible;
+    }
+    
+    .header__bottom .menu__section > ul > li > ul > li{
+        padding: 5px 31px 5px 15px;
+        display: block;
+        margin:0px ;
+        border-bottom: 1px dotted var(--pColor);
+        transition: 0.3s;
+    }
+
+    .menu__section > ul > li > ul > li:last-child{
+        border-bottom: none;
+    }
+
+    .header__bottom .menu__section > ul > li > ul > li:hover{
+        border-radius: 5px;
+    }
+
+    .header__bottom .menu__section > ul > li > ul > li > a{
+        margin: 0;
+    }
+
+    .header__bottom .menu__section ul li a {
+        margin-left: 32px;
+        text-decoration: none;
+        color: #000;
+        font-weight: bold;
+        font-size: 18px;
+        position: relative;
+        padding-bottom: 7px;
+    }
+    
+    .header__bottom .menu__section ul li a.active , .header__bottom .menu__section ul li a:hover{
+        color: var(--pColor);
+    }
+
+    .header__bottom .menu__section > ul > li > a::after {
+        position: absolute;
+        left: 0px;
+        bottom: 0px;
+        content: "";
+        height: 2px;
+        width: 100%;
+        background-color: var(--pColor);
+        transition: transform 0.6s;
+        transform: scaleX(0); 
+        transform-origin: right;
+    }
+
+    .header__bottom .menu__section > ul > li > a:hover::after{
+        /* width: 100%; */
+        transform: scaleX(1);
+        transform-origin: left;
+    }
+
+
+    /* header bottom end here */
+/* ------------------------------------------------------ */
+    /* banner section start here */
+
+.banner__section{
+    text-align: center;
+    background-image: url(../images/banner.png);
+    background-position: bottom;
+    background-size: cover;
+    padding: 200px 0px;
+}
+
+/* .banner__content {
+    text-align: center;
+} */
+
+.banner__content h1, h1 span {
+    font-size: 80px;
+    font-family: 'Cookie', cursive;
+    font-weight: 500;
+}
+
+.banner__content h1 span {
+    color: var(--pColor);
+}
+
+.banner__content p {
+    max-width: 710px;
+    margin: auto;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+.banner__content .btnbutton{
+    margin-top: 40px;
+    padding: 15px 40px;
+    text-decoration: none;
+    color: var(--pTextColor);
+    background-color: var(--pColor);
+    border: none;
+    border-radius: 10px;
+    position: relative;
+    z-index: 999;
+}
+
+.banner__content .btnbuttona:hover{
+    color: var(--pColor);
+}
+
+.banner__content .btnbutton::after{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    background-color: green;
+    border-radius: 10px;
+    transition: transform 0.5s ease-in-out;
+    transform: scaleX(0);
+    transform-origin: right;
+    /* z-index: 4; */
+    
+}
+
+.banner__content .btnbutton:hover::after{
+    /* width: 100%; */
+    transform-origin: left;
+    transform: scaleX(1);
+    z-index: -5;
+}
+
+    /* banner section start here */ 
+/* ------------------------------------------------- */
+    /* details section start here */
+    .second__column{
+        margin-top: 100px;
+        /* overflow: hidden; */
+    }
+    .image__section img{
+        background-size: cover;
+        background-position: center;
+        max-height: 440px;
+        width: 100%;
+    }
+
+    /* .image__section img:hover{
+        -webkit-transform: scale(1.05);
+    } */
+
+        /* register section start here */
+        .inner__container{
+            padding: 0;
+        }
+
+        .register__section .register__title p {
+            font-size: 18px;
+            font-weight: bold;
+            text-transform: capitalize;
+        }
+        
+        .register__section .register__date {
+            display: flex;
+            flex-wrap: wrap;
+            font-weight: bold;
+        }
+        
+        .register__section .register__date .name__section {
+            margin-left: 20px;
+        }
+
+        .register__para span {
+            font-size: 14px;
+            font-weight: 500;
+        }
+
+        .register__form input, textarea {
+            width: 100%;
+            margin-bottom: 26px;
+            padding: 10px;
+            outline: none;
+            border: 2px solid var(--pColor);
+            border-radius: 3px;
+        }
+
+        .register__form form .btnbutton {
+            text-decoration: none;
+            background-color: var(--pColor);
+            padding: 20px 0px;
+            display: block;
+            color: #fff;
+            font-size: 17px;
+            border-radius: 5px;
+            text-align: center;
+        }
+
+        .related_post_inner {
+            margin-bottom: 55px;
+        }
+        
+        input#name {
+            width: 48%;
+            margin-right: 20px;
+        }
+        
+        input#e-mail {
+            width: 48%;
+        }
+       
+        
+        /* register section start here */
+/* ------------------------------------------------ */
+        /* Categorie sectiono start here */
+        .categorie__section {
+            margin: 75px 75px 30px 75px;
+        }
+        
+        .categorie__section .categorie__title h3 {
+            font-size: 32px;
+            font-weight: bold;
+        }
+        
+        .categorie__section .categorie__list ul {
+            padding: 0;
+        }
+        
+        .categorie__section .categorie__list ul li {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            list-style: none;
+            margin-top: 16px;
+            position: relative;
+        }
+        
+        .categorie__section .categorie__list ul li a {
+            text-decoration: none;
+            color: #000;
+            font-weight: 500;
+            padding-bottom: 1px;
+            transition: all 0.3s;
+        }
+
+        .categorie__section .categorie__list ul li a:hover{
+            color: var(--pColor);
+        }
+
+        .categorie__section .categorie__list ul li ::after{
+            position: absolute;
+            content: "";
+            left: 0;
+            bottom: 0;
+            height: 2px;
+            width: 100%;
+            background-color: var(--pColor);
+        }
+
+        /* Categorie sectiono end here */
+
+    /* details section end here */
+
+    /*  Product Section start here */
+    .product__section {
+        text-align: center;
+    }
+
+    .product__details{
+        padding: 15px;
+    }
+    
+    .product__section h3 {
+        font-size: 23px;
+        font-weight: bold;
+        margin-bottom: 20px;
+    }
+
+    .tea, .tea_variety {
+        display: flex;
+    }
+
+    .tea{
+        margin-bottom: 30px;
+    }
+    
+    .tea_image img{
+        height: 50px;
+        width: auto;
+    }
+
+    .tea_variety {
+        /* display: flex; */
+        justify-content: space-between;
+        font-weight: bold;
+    }
+    
+    .tea_rating ul {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .tea_rating ul li {
+        list-style: none;
+    }
+    
+    .tea_rating ul li a {
+        text-decoration: none;
+    }
+
+    .tea_name p, .tea_price span, .tea_para p {
+        padding: 0;
+        margin: 0;
+    }
+
+    .tea_price span{
+        color: var(--pColor);
+    }
+    
+    .tea_para p {
+        font-size: 12px;
+        font-weight: 500;
+    }
+
+    /*  Product Section end here  */
+/* ------------------------------------------------ */
+
+    /* Related posts start here */
+
+    .related__post .related{
+        margin: 100px 0px 85px;
+    }
+
+    .banner__herbal__tea {
+        margin-top: 40px;
+        background-color: #f1efe2;
+        padding: 30px;
+    }
+
+    .tea__description{
+        margin-top: 25px;
+        text-align: justify;
+    }
+    
+    .tea__description .tea__title h3 {
+        font-size: 25px;
+        font-weight: bold;
+    }
+    
+    .tea__description .tea__para p {
+        font-size: 14px;
+        font-weight: 500;
+    }
+
+   
+    
+ 
+    /* Related posts start here */
+/* ------------------------------------------------ */
+    /* Map section  start here  */
+.map_section{
+    background-image: url(../images/background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 160px 0px 240px;
+}
+
+.map_sm_img {
+    text-align: end;
+    padding-right: 0;
+    transform-origin: right;
+    transition:  1s ease-in-out;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.map_section:hover .map_sm_img{
+    padding-right: 365px;
+    visibility: visible;
+    opacity: 1;
+}
+
+    /* Map section  end here */
+/* ------------------------------------------------- */
+    /* Tea Benefit section  start here */
+
+    .benefits__inner {
+        margin-top: 95px;
+    }
+    
+    .benefits{
+        padding: 15px;
+    }
+
+    .benefits .benefits__title h3 {
+        font-size: 30px;
+        font-weight: 500;
+        margin-bottom: 40px;
+    }
+    
+    .benefits .benefits__list ul {
+        padding: 0;
+        margin: 0;
+    }
+    
+    .benefits .benefits__list ul li {
+        list-style: none;
+        padding-bottom: 10px;
+    }
+    
+    .benefits .benefits__list ul li a {
+        text-decoration: none;
+        font-size: 17px;
+        font-weight: 500;
+        color: #000;
+    }
+    
+    .benefits .benefits__list ul li a i {
+        margin-right: 25px;
+    }
+
+
+ 
+    .natural__green__tea .tea__image {
+        padding-top: 40px;
+        margin-left: 46px;
+    }
+
+    .extra{
+        display: none;
+    }
+    /* Tea Benefit section  end here */
+/* ----------------------------------------------- */
+    /* Contact section start here */
+
+.contact__title h4{
+    font-weight: bold;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    position: relative;
+    color: var(--pTextColor);
+}
+
+.contact__title h4::after{
+    position: absolute;
+    content: "";
+    height: 2px;
+    left: 0;
+    bottom: 0;
+    background-color: var(--pTextColor);
+}
+
+.contact__title .shop__h4::after{
+    width: 33%;
+}
+
+.contact__title .information__h4::after{
+    width: 75%;
+}
+
+.contact__title .about__h4::after{
+    width: 40%;
+}
+
+.contact__title .follow__h4::after{
+    width: 39%;
+}
+
+.contact__by .contact__more ul {
+    padding: 0;
+    margin: 0;
+}
+
+.contact__by .contact__more ul li {
+    list-style: none;
+    padding-bottom: 8px;
+}
+
+.contact__by .contact__more ul li a {
+    text-decoration: none;
+    color: var(--pTextColor);
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.contact__section {
+    background-color: var(--pColor);
+    margin-top: 80px;
+    padding: 80px 0px;
+}
+
+.image_info_more ul {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+}
+
+.image_info_more ul li {
+    list-style: none;
+    margin: 0px 6px 6px 0px;
+}
+
+
+
+
+    /* Contact section end here */
+/* -------------------------------------------- */
+
+    /* bottom_section  start here */
+
+.bottom__section .inner__bottom p {
+    padding: 15px 0px;
+    margin: 0;
+    font-weight: bold;
+}
+
+.bottom__section .inner__bottom {
+    text-align: center;
+}
+
+    /* bottom_section end here */
+/* --------------------------------------------- */

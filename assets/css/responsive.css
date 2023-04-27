@@ -1,0 +1,384 @@
+@media screen and (max-width: 1399px) {
+    .details__section .second__column{
+        margin-top: 85px;
+    }
+
+    span.form_box input {
+        padding: 4px;
+        margin-top: 8px;
+    }
+
+
+    span.form_box.three input, .a {
+        width: 99%;
+        padding: 4px;
+    }
+
+    .inner__container .a a{
+        padding: 5px;
+    }
+
+    .row.related h2 {
+        margin: 0;
+    }
+
+    .related__post .related {
+        margin: 85px 0px 80px;
+    }
+
+    .banner__herbal__tea {
+        margin-top: 38px;
+        padding: 28px;
+    }
+
+    .tea__description {
+        margin-top: 23px;
+    }
+
+    .benefits__inner {
+        margin-top: 88px;
+    }
+
+    .benefits .benefits__title h3 {
+        margin-bottom: 38px;
+    }
+
+    .tea__button {
+        margin-top: 18px;
+    }
+
+    .contact__section {
+        margin-top: 75px;
+        padding: 75px 0px;
+    }
+
+    .image_info_more ul li a img{
+        max-width: 124px;
+    }
+
+    input#name {
+        width:100%;
+        margin-right: 0px;
+    }
+    
+    input#e-mail {
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width: 1199px) {
+    .banner__section .cantainer{
+        max-width: 100%;
+    }
+
+    .details__section .second__column {
+        margin-top: 75px;
+    }
+
+    .related__post .related {
+        margin: 80px 0px 70px;
+    }
+
+    .banner__herbal__tea {
+        margin-top: 36px;
+        padding: 22px;
+    }
+
+    .benefits__title h3 {
+        margin-bottom: 33px;
+    }
+
+    .benefits .benefits__list ul li {
+        padding-bottom: 8px;
+    }
+
+    .background__image {
+        padding: 90px 0px 161px;
+    }
+
+    .map_sm_img img{
+        max-width: 400px;
+    }
+
+    .tea__button {
+        margin-top: 15px;
+    }
+
+    .contact__section {
+        margin-top: 68px;
+        padding: 68px 0px;
+    }
+
+    .image_info_more ul li a img {
+        max-width: 102px;
+    }
+
+}
+
+@media screen and (max-width: 991px) {
+
+    .header__section {
+        display: none;
+    }
+
+    .container{
+        max-width: 100%;
+    }
+
+    .banner__section {
+        padding: 145px 0px;
+    }
+
+    .banner__content h1, h1 span {
+        font-size: 63px;
+    }
+
+    .banner__content p {
+        font-size: 14px;
+    }
+
+    .banner__content .btnbutton {
+        margin-top: 32px;
+        padding: 13px 36px;
+    }
+
+    .banner__herbal__tea {
+        margin-top: 30px;
+        padding: 17px;
+    }
+
+    .tea__description {
+        margin-top: 20px;
+    }
+
+    .benefits__inner {
+        margin-top: 70px;
+    }
+
+    .benefits {
+        padding: 27px;
+    }
+
+    .benefits .benefits__title h3 {
+        margin-bottom: 32px;
+    }
+
+    .benefits .benefits__list ul li {
+        padding-bottom: 5px;
+    }
+
+    .contact__section {
+        margin-top: 50px;
+        padding: 58px 0px;
+    }
+
+    .image_info_more ul li a img {
+        max-width: 72px;
+    }
+
+    .background__image {
+        background-image: url(../images/background.png);
+        padding: 96px 0px 112px;
+    }
+
+    .map_sm_img_inner img{
+        max-width: 200px;
+    }
+
+    .contact__section__inner {
+        padding-left: 20px;
+    }
+
+    .benefits {
+        padding: 15px;
+        text-align: center;
+    }
+
+    .natural__green__tea .tea__image {
+        margin-left: 0px;
+        text-align: center;
+    }
+
+}
+
+@media screen and (max-width: 767px) {
+    .extra{
+        display: block;
+    }
+    .container{
+        max-width: 100%;
+    }
+
+    
+    .banner__section {
+        padding: 78px 0px;
+    }
+
+    .image__section img {
+        max-height: 500px;
+    }
+
+    .banner__content h1, h1 span {
+        font-size: 50px;
+    }
+
+    .banner__content p {
+        max-width: 652px;
+    }
+
+    .banner__content .btnbutton {
+        margin-top: 32px;
+        padding: 10px 30px;
+    }
+
+    .details__section .second__column {
+        margin-top: 50px;
+    }
+
+    .background__image {
+        padding: 191px 0px 94px;
+    }
+
+    .map_sm_img_inner img{
+        display: none;
+    }
+
+    .register__section {
+        margin-top: 50px;
+    }
+
+    .natural__green__tea .tea__image {
+        padding-top: 132px;
+    }
+
+    .tea__image img {
+        width: 60%;
+    }
+
+    .colsm4{
+        margin-bottom: 20px;
+    }
+
+    .contact__section {
+        margin-top: 50px;
+        padding: 40px 0px;
+    }
+
+    .image_info_more ul li a img {
+        max-width: 100px;
+    }
+
+    .image_info_more ul li {
+        list-style: none;
+        margin: 0px 11px 11px 0px;
+    }
+
+    .contact__section {
+        margin-top: 20px;
+        padding: 35px 0px;
+    }
+
+    .contact__title h4::after {
+        width: 33%;
+        display: none;
+    }
+
+    .bottom__section .inner__bottom p {
+        padding: 10px 0px;
+        /* font-size: 13px;
+        font-weight: 300; */
+    }
+  
+}
+
+@media screen and (max-width: 572px) {
+    .extra{
+        display: none;
+    }
+
+    .banner__content h1, h1 span {
+        font-size: 36px;
+    }
+
+    .banner__content p {
+        max-width: 390px;
+    }
+
+    .banner__content .btnbutton {
+        margin-top: 24px;
+        padding: 5px 18px;
+    }
+
+    .related__post .related {
+        margin: 60px 0px 55px;
+    }
+
+    .map_section {
+        padding: 210px 0px 0px;
+    }
+
+    .map_sm_img_inner img {
+        display: none;
+    }
+
+    .benefits__inner {
+        margin-top: 30px;
+    }
+
+    .benefits {
+        padding: 22px;
+    }
+
+    .benefits .benefits__title h3 {
+        margin-bottom: 20px;
+    }
+
+    .tea__button {
+        margin-top: 10px;
+    }
+
+    .natural__green__tea .tea__image {
+        padding-top: 50px;
+    }
+
+    .image_info_more ul li a img {
+        max-width: 125px;
+    }
+
+}
+
+@media screen and (max-width: 424px) {
+ 
+    
+    .banner__content h1, h1 span {
+        font-size: 27px;
+    }
+
+    .banner__content p {
+        max-width: 301px;
+    }
+
+    .tea__description .tea__title h3 {
+        font-size: 22px;
+        font-weight: 500;
+    }
+
+    .tea__description .tea__para p {
+        font-size: 12px;
+    }
+
+    .map_section{
+        padding: 172px 0px 0px 0px;
+    }
+
+    .map_sm_img_inner img{
+        display: none;
+    }
+
+    .bottom__section .inner__bottom p {
+        /* padding: 10px 0px; */
+        font-size: 13px;
+        font-weight: 300;
+    }
+}
